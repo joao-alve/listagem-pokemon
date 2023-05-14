@@ -1,0 +1,124 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px ;
+    margin: 0 auto;
+    background-color: #5e5b5bad;
+    color: #333333;
+}
+
+body.modo-escuro{
+    background-color: #212121;
+    color: #f5f5f5;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+header .logo,
+header .imagem-botao{
+    width: 40px;
+}
+header #botão-altera-tema{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+main{
+   
+    padding: 25px ;
+}
+main .listagem-pokemon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+main .cartao-pokemon{
+background-color: #d8e3ec;
+width: 200px;
+padding: 15px;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 15px;
+border-radius: 15px;
+transition: 0.2s ease-in-out;
+}
+main .cartao-pokemon:hover{
+    background-color: #92d3d1;
+    }
+
+.mode-escuro .cartao-pokemon:hover{
+   background-color: #a8a8a8;
+}
+main .cartao-pokemon .informacoes{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+
+main .cartao-pokemon .informacoes span{
+
+padding: 5px;
+text-transform: uppercase;
+font-size: 17px;
+}
+
+main .cartao-pokemon .gif{
+    width: 90px;
+    height: 90px;
+    }
+
+    main .cartao-pokemon .tipos{
+display: flex;
+gap: 15px;
+
+    }
+
+    main .cartao-pokemon .tipo{
+        padding: 8px;
+        border-radius: 10px;
+     }
+    
+     .planta{
+        background-color: #7ac77a;
+    }
+    .venenoso{
+        background-color: #df67ddfb ;
+    }
+    .fogo{
+        background-color: #ee8130;
+    }
+    .Voador{
+        background-color: rgb(247, 243, 243);
+    }
+    .água{
+        background-color: #6390f0;
+    }
+    .eletrico{
+        background-color:rgb(245, 229, 142)
+    }
+    .fantasma{
+        background-color: #b356b1fb
+    }.Psíquico{
+        background-color: #eb62a2fb
+    }.dragrao{
+        background-color: rgb(141, 156, 241);
+    }
+
+.descricao{
+    max-height: 70px;
+   overflow:scroll;
+   font-size: 14px;
+padding-right: 10px;
+}
